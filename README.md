@@ -1,7 +1,7 @@
 # DeBiasingWE
 Debiasing Word Embeddings and removing gender biases
 
-** Project Link **
+** Project Link **       
 https://00arun00.github.io/DeBiasingWE/
 
 ** Note **  
