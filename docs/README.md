@@ -21,36 +21,36 @@ Lets first see how the GloVe word embeddings relate to gender. First let us comp
 
 ### Names and their gender bias
 List of names and their similarities with constructed vector:
-john -0.23163356145973724
-marie 0.315597935396073
-sophie 0.31868789859418784
-ronaldo -0.31244796850329437
-priya 0.176320418390094
-rahul -0.16915471039231722
-danielle 0.24393299216283895
-reza -0.07930429672199552
-katy 0.2831068659572615
-yasmin 0.23313857767928758
+john -0.23163356145973724      
+marie 0.315597935396073      
+sophie 0.31868789859418784      
+ronaldo -0.31244796850329437      
+priya 0.176320418390094      
+rahul -0.16915471039231722      
+danielle 0.24393299216283895      
+reza -0.07930429672199552      
+katy 0.2831068659572615      
+yasmin 0.23313857767928758      
 
 As you can see, female first names tend to have a positive cosine similarity with our constructed vector ![eq](http://latex.codecogs.com/gif.latex?%24g%24), while male first names tend to have a negative cosine similarity. This is not surprising, and the result seems acceptable.
 
 ### Other words and their similarities:
-lipstick 0.2769191625638267
-guns -0.1888485567898898
-science -0.060829065409296994
-arts 0.008189312385880328
-literature 0.06472504433459927
-warrior -0.2092016464112529
-doctor 0.11895289410935041
-tree -0.07089399175478091
-receptionist 0.33077941750593737
-technology -0.131937324475543
-fashion 0.03563894625772699
-teacher 0.17920923431825664
-engineer -0.08039280494524072
-pilot 0.001076449899191679
-computer -0.10330358873850498
-singer 0.1850051813649629
+lipstick 0.2769191625638267     
+guns -0.1888485567898898     
+science -0.060829065409296994     
+arts 0.008189312385880328     
+literature 0.06472504433459927     
+warrior -0.2092016464112529     
+doctor 0.11895289410935041     
+tree -0.07089399175478091     
+receptionist 0.33077941750593737     
+technology -0.131937324475543     
+fashion 0.03563894625772699     
+teacher 0.17920923431825664     
+engineer -0.08039280494524072     
+pilot 0.001076449899191679     
+computer -0.10330358873850498     
+singer 0.1850051813649629     
 
 It is astonishing how these results reflect certain unhealthy gender stereotypes. For example, "computer" is closer to "man" while "literature" is closer to "woman". Ouch!
 
