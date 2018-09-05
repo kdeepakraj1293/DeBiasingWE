@@ -67,12 +67,12 @@ Even though ![eq](http://latex.codecogs.com/gif.latex?%24g_%7B%5Cperp%7D%24) is 
 <img src="https://raw.githubusercontent.com/00arun00/DeBiasingWE/master/images/neutral.png" style="width:800px;height:300px;">
 <caption><center> **Figure 2**: The word vector for "receptionist" represented before and after applying the neutralize operation. </center></caption>
 
-Given an input embedding $e$, we can use the following formulas to compute ![eq](http://latex.codecogs.com/gif.latex?%24e%5E%7Bdebiased%7D%24):
+Given an input embedding ![eq](http://latex.codecogs.com/gif.latex?e), we can use the following formulas to compute ![eq](http://latex.codecogs.com/gif.latex?%24e%5E%7Bdebiased%7D%24):
 
 ![eq](http://latex.codecogs.com/gif.latex?%24%24e%5E%7Bbias%5C_component%7D%20%3D%20%5Cfrac%7Be%20%5Ccdot%20g%7D%7B%7C%7Cg%7C%7C_2%5E2%7D%20*%20g%24%24)   
 ![eq](http://latex.codecogs.com/gif.latex?%24%24e%5E%7Bdebiased%7D%20%3D%20e%20-%20e%5E%7Bbias%5C_component%7D%24%24)
 
-$e^{bias\_component}$ is the projection of $e$ onto the direction ![eq](http://latex.codecogs.com/gif.latex?%24g%24).
+![eq](http://latex.codecogs.com/gif.latex?%24e%5E%7Bbias%5C_component%7D%24) is the projection of ![eq](http://latex.codecogs.com/gif.latex?e) onto the direction ![eq](http://latex.codecogs.com/gif.latex?%24g%24).
 
 ### 3.2 - Equalization algorithm for gender-specific words
 
