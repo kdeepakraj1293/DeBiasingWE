@@ -101,15 +101,15 @@ The derivation of the linear algebra to do this is a bit more complex. (See Bolu
 
 
 ## Results
-'''
-cosine similarities before equalizing:
-cosine_similarity(word_to_vec_map["man"], gender) =  -0.1171109576533683
-cosine_similarity(word_to_vec_map["woman"], gender) =  0.3566661884627037
+```
+cosine similarities before equalizing:      
+cosine_similarity(word_to_vec_map["man"], gender) =  -0.1171109576533683      
+cosine_similarity(word_to_vec_map["woman"], gender) =  0.3566661884627037      
 
-cosine similarities after equalizing:
-cosine_similarity(e1, gender) =  -0.7165727525843935
-cosine_similarity(e2, gender) =  0.7396596474928909
-'''
+cosine similarities after equalizing:      
+cosine_similarity(e1, gender) =  -0.7165727525843935      
+cosine_similarity(e2, gender) =  0.7396596474928909      
+```
 
 **References**:
 - The debiasing algorithm is from Bolukbasi et al., 2016, [Man is to Computer Programmer as Woman is to
