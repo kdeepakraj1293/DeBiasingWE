@@ -8,7 +8,7 @@ To measure how similar two words are, we need a way to measure the degree of sim
 ![eq1](http://latex.codecogs.com/gif.latex?CosineSimilarity%28u%2C%20v%29%20%3D%20%5Cfrac%20%7Bu%20.%20v%7D%20%7B%7C%7Cu%7C%7C_2%20.%20%7C%7Cv%7C%7C_2%7D%20%3D%20cos%28%5Ctheta%29)   
 where ![eq2](http://latex.codecogs.com/gif.latex?%24u.v%24) is the dot product (or inner product) of two vectors, ![eq3](http://latex.codecogs.com/gif.latex?%7C%7Cu%7C%7C_2) is the norm (or length) of the vector ![eq4](http://latex.codecogs.com/gif.latex?u), and ![eq4](http://latex.codecogs.com/gif.latex?%24%5Ctheta%24) is the angle between ![eq4](http://latex.codecogs.com/gif.latex?u) and ![eq4](http://latex.codecogs.com/gif.latex?v). This similarity depends on the angle between ![eq4](http://latex.codecogs.com/gif.latex?u) and ![eq4](http://latex.codecogs.com/gif.latex?v). If ![eq4](http://latex.codecogs.com/gif.latex?u) and ![eq4](http://latex.codecogs.com/gif.latex?v) are very similar, their cosine similarity will be close to 1; if they are dissimilar, the cosine similarity will take a smaller value.
 
-<img src="images/cosine_sim.png" style="width:800px;height:250px;">
+<img src="https://raw.githubusercontent.com/00arun00/DeBiasingWE/master/images/cosine_sim.png" style="width:800px;height:250px;">
 <caption><center> **Figure 1**: The cosine of the angle between two vectors is a measure of how similar they are</center></caption>
 
 **Reminder**: The norm of ![eq4](http://latex.codecogs.com/gif.latex?u) is defined as ![eq4](http://latex.codecogs.com/gif.latex?%7C%7Cu%7C%7C_2%20%3D%20%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20u_i%5E2%7D)
@@ -62,7 +62,7 @@ The figure below should help we visualize what neutralizing does. If we're using
 
 Even though ![eq](http://latex.codecogs.com/gif.latex?%24g_%7B%5Cperp%7D%24) is 49 dimensional, given the limitations of what can be drawn on a screen, the illustration is done using a 1 dimensional axis below.
 
-<img src="images/neutral.png" style="width:800px;height:300px;">
+<img src="https://raw.githubusercontent.com/00arun00/DeBiasingWE/master/images/neutral.png" style="width:800px;height:300px;">
 <caption><center> **Figure 2**: The word vector for "receptionist" represented before and after applying the neutralize operation. </center></caption>
 
 Given an input embedding $e$, we can use the following formulas to compute ![eq](http://latex.codecogs.com/gif.latex?%24e%5E%7Bdebiased%7D%24):
@@ -78,7 +78,7 @@ Next, lets see how debiasing can also be applied to word pairs such as "actress"
 
 The key idea behind equalization is to make sure that a particular pair of words are equi-distant from the 49-dimensional ![eq](http://latex.codecogs.com/gif.latex?%24g_%5Cperp%24). The equalization step also ensures that the two equalized steps are now the same distance from ![eq](http://latex.codecogs.com/gif.latex?%24e_%7Breceptionist%7D%5E%7Bdebiased%7D%24), or from any other work that has been neutralized. In pictures, this is how equalization works:
 
-<img src="images/equalize10.png" style="width:800px;height:400px;">
+<img src="https://raw.githubusercontent.com/00arun00/DeBiasingWE/master/images/equalize10.png" style="width:800px;height:400px;">
 
 
 The derivation of the linear algebra to do this is a bit more complex. (See Bolukbasi et al., 2016 for details.) But the key equations are:
