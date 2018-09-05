@@ -21,6 +21,7 @@ Lets first see how the GloVe word embeddings relate to gender. First let us comp
 
 ### Names and their gender bias
 List of names and their similarities with constructed vector:
+```
 john -0.23163356145973724      
 marie 0.315597935396073      
 sophie 0.31868789859418784      
@@ -31,10 +32,11 @@ danielle 0.24393299216283895
 reza -0.07930429672199552      
 katy 0.2831068659572615      
 yasmin 0.23313857767928758      
-
+```
 As you can see, female first names tend to have a positive cosine similarity with our constructed vector ![eq](http://latex.codecogs.com/gif.latex?%24g%24), while male first names tend to have a negative cosine similarity. This is not surprising, and the result seems acceptable.
 
 ### Other words and their similarities:
+```
 lipstick 0.2769191625638267     
 guns -0.1888485567898898     
 science -0.060829065409296994     
@@ -51,7 +53,7 @@ engineer -0.08039280494524072
 pilot 0.001076449899191679     
 computer -0.10330358873850498     
 singer 0.1850051813649629     
-
+```
 It is astonishing how these results reflect certain unhealthy gender stereotypes. For example, "computer" is closer to "man" while "literature" is closer to "woman". Ouch!
 
 Note that some word pairs such as "actor"/"actress" or "grandmother"/"grandfather" should remain gender specific, while other words such as "receptionist" or "technology" should be neutralized, i.e. not be gender-related. You will have to treat these two type of words differently when debiasing.
