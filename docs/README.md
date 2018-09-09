@@ -33,7 +33,7 @@ reza -0.07930429672199552
 katy 0.2831068659572615      
 yasmin 0.23313857767928758      
 ```
-As you can see, female first names tend to have a positive cosine similarity with our constructed vector ![eq](http://latex.codecogs.com/gif.latex?%24g%24), while male first names tend to have a negative cosine similarity. This is not surprising, and the result seems acceptable.
+As we can see, female first names tend to have a positive cosine similarity with our constructed vector ![eq](http://latex.codecogs.com/gif.latex?%24g%24), while male first names tend to have a negative cosine similarity. This is not surprising, and the result seems acceptable.
 
 ### Other words and their similarities:
 ```
@@ -56,7 +56,7 @@ singer 0.1850051813649629
 ```
 It is astonishing how these results reflect certain unhealthy gender stereotypes. For example, "computer" is closer to "man" while "literature" is closer to "woman". Ouch!
 
-Note that some word pairs such as "actor"/"actress" or "grandmother"/"grandfather" should remain gender specific, while other words such as "receptionist" or "technology" should be neutralized, i.e. not be gender-related. You will have to treat these two type of words differently when debiasing.
+Note that some word pairs such as "actor"/"actress" or "grandmother"/"grandfather" should remain gender specific, while other words such as "receptionist" or "technology" should be neutralized, i.e. not be gender-related. We will have to treat these two type of words differently when debiasing.
 
 ### 3.1 - Neutralize bias for non-gender specific words
 
