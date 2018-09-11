@@ -2,6 +2,13 @@
  DeBiasingWE:
  -------------
  Debiasing Word Embeddings and removing gender biases from pretrained GloVe Vectors.
+ 
+ Features to add 
+ - add argparse to make it possible to de biase embedding passed as argument
+ - add option to add a list of gender specific words to equalize 
+ - add option  to train  and save a classifier that can identify fender specific words 
+ - better estimate of gender 
+ 
 '''
 
 import numpy as np
